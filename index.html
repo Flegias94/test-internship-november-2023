@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" id="logo">
+    </div>
+    <div class="container">
+        <div id="sidebar">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about-us.html">About</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div id="weather-container">
+            <form id="weather-form" style="margin-bottom: 20px;">
+                <label for="latitude">Latitude:</label>
+                <input type="number" id="latitude" name="latitude" step="any" required>
+            
+                <label for="longitude">Longitude:</label>
+                <input type="number" id="longitude" name="longitude" step="any" required>
+            
+                <label for="forecast-days">Forecast days:</label>
+                <select id="forecast-days" name="forecast-days">
+                    <option value="1">1 day</option>
+                    <option value="3">3 days</option>
+                    <option value="7">7 days</option>
+                    <option value="14">14 days</option>
+                </select>
+                <input type="submit" value="Search">
+                <script src="weather.js"></script>
+            </form>
+            <div id="tableOutput"></div>
+        </div>
+    </div>
+   
+    <footer class="footer">
+        <p>Assist Software 2023</p>
+        <p>Created by Siminiceanu Tudor</p>
+    </footer>
+    
+</body>
+</html>
